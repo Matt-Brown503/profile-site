@@ -17,18 +17,37 @@
 <body>
   <nav>
     <ul class="navbar" id="nav">
+    
       <li class="logo"><a href="#">Matt</a></li>
-      <li><a href="#">About</a></li>
-      <li><a href="#">Work</a></li>
-      <li><a href="#">Contact</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#work">Work</a></li>
+      <li><a href="#contact">Contact</a></li>
       <li class="icon">
-        <a href="#" onclick="openNav()">&#9776;</a>
+        <a id='navOpener' href="#" onclick="openNav()">&#9776;</a>
       </li>
     </ul>
   </nav>
-  <div class="container">
-
+  <div class='header'>
+    <h1>Matt Brown</h1>
+    <h2>Web Developer</h2>
   </div>
+  
+  
+    <section class="about" id='about'>
+    <div class="container">
+      <p>Praesent sit amet consectetur justo. Aenean eu elementum urna. Aenean imperdiet tellus iaculis odio sagittis, non condimentum velit sollicitudin. Etiam mi tortor, interdum non erat non, tincidunt dignissim dui. Fusce a porttitor mauris, vitae iaculis nisl. Curabitur vulputate lacus vel justo tincidunt ultricies et ac sapien. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eros nisl, egestas et lectus in, tempor molestie ex. Morbi molestie laoreet libero, a lacinia ante fringilla quis. In hac habitasse platea dictumst. Praesent eget elit vestibulum, porta felis eu, sagittis turpis. Morbi neque enim, scelerisque id pellentesque nec, imperdiet eget risus. Aenean aliquam tempus nunc id dapibus. Nullam ac nisi ut sem rhoncus porttitor non vitae nisl. Cras dignissim lorem ut iaculis egestas. Nunc eu tempus quam.</p>
+      </div>
+    </section>
+    <section class="work" id='work'>
+    <div class="container">
+      <p>Praesent sit amet consectetur justo. Aenean eu elementum urna. Aenean imperdiet tellus iaculis odio sagittis, non condimentum velit sollicitudin. Etiam mi tortor, interdum non erat non, tincidunt dignissim dui. Fusce a porttitor mauris, vitae iaculis nisl. Curabitur vulputate lacus vel justo tincidunt ultricies et ac sapien. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eros nisl, egestas et lectus in, tempor molestie ex. Morbi molestie laoreet libero, a lacinia ante fringilla quis. In hac habitasse platea dictumst. Praesent eget elit vestibulum, porta felis eu, sagittis turpis. Morbi neque enim, scelerisque id pellentesque nec, imperdiet eget risus. Aenean aliquam tempus nunc id dapibus. Nullam ac nisi ut sem rhoncus porttitor non vitae nisl. Cras dignissim lorem ut iaculis egestas. Nunc eu tempus quam.</p>
+      </div>
+      </section>
+    <section class="contact" id="contact">
+    <div class="container">
+      <p>Praesent sit amet consectetur justo. Aenean eu elementum urna. Aenean imperdiet tellus iaculis odio sagittis, non condimentum velit sollicitudin. Etiam mi tortor, interdum non erat non, tincidunt dignissim dui. Fusce a porttitor mauris, vitae iaculis nisl. Curabitur vulputate lacus vel justo tincidunt ultricies et ac sapien. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eros nisl, egestas et lectus in, tempor molestie ex. Morbi molestie laoreet libero, a lacinia ante fringilla quis. In hac habitasse platea dictumst. Praesent eget elit vestibulum, porta felis eu, sagittis turpis. Morbi neque enim, scelerisque id pellentesque nec, imperdiet eget risus. Aenean aliquam tempus nunc id dapibus. Nullam ac nisi ut sem rhoncus porttitor non vitae nisl. Cras dignissim lorem ut iaculis egestas. Nunc eu tempus quam.</p>
+      </div>
+      </section>
 
 
 
@@ -36,7 +55,9 @@
 
 
 
-  <script src="js/scripts.js"></script>
+
+  
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <script src="js/scripts.js"></script>
 </body>
 </html>

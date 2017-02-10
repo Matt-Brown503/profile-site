@@ -8,7 +8,11 @@ ul.navbar {
 	margin: 0;
 	padding: 0;
 	overflow: hidden;
-	background-color: #777;
+	background-color: rgba(0,0,0, .5);
+	box-shadow: 0px 5px 10px rgba(0,0,0, .3);
+	position: fixed;
+	width: 100%;
+	z-index: 1;
 }
 
 /* float li items */
@@ -47,7 +51,7 @@ ul.navbar li.icon {
 }
 @media screen and (max-width:680px) {
 	ul.navbar.responsive {
-		position: relative;
+		position: fixed;
 	}
 	ul.navbar.responsive li.icon {
 		position: absolute;
@@ -62,4 +66,36 @@ ul.navbar li.icon {
 		display: block;
 		text-align: left;
 	}
+}
+
+/* Page Styles */
+
+.container {
+	width: 80%;
+	margin: 0 auto;
+	color: red;
+}
+.header {
+	display: flex;
+	background-image: url('https://images.unsplash.com/photo-1464142084585-c6ded77b9710?dpr=1.25&auto=format&fit=crop&w=1199&h=800&q=80&cs=tinysrgb&crop=');
+	background-size: cover;
+	height: 100vh;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+section {
+	min-height: 400px;
+	margin: 0px;
+	padding: 10px;
+}
+
+.about {
+	background-color: green;
+}
+.work {
+	background-color: red;
+}
+.contact {
+	background-color: blue;
 }

@@ -9,3 +9,18 @@ var openNav = function() {
 		nav.className = "navbar";
 	}
 }
+
+document.getElementById('navOpener').addEventListener('click', function(event){
+	event.preventDefault();
+});
+
+$('a[href^="#"').on('click', function(event) {
+	var target = $(this.getAttribute('href'));
+
+	if(target.length) {
+		event.preventDefault();
+		$('html, body').stop().animate({
+			scrollTop: target.offset().top - $('#nav').height()
+		}, 750);
+	}
+});
