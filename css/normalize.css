@@ -459,3 +459,10 @@ template {
 [hidden] {
   display: none;
 }
+
+/*Custom Styling resets*/
+
+ul, ol {
+  list-style-type: none;
+  padding-left: 0;
+}
