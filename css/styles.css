@@ -12,12 +12,11 @@ body {
 	font-size: 40px;
 	position: fixed;
 	top: 20px;
-	
 	left: 20px;
 	z-index: 1;
-	transition: .5s;
+	transition: .4s;
 	cursor: pointer;
-	color: #333;
+	color: #fff;
 }
 .sidebar {
 	position: fixed;
@@ -36,14 +35,15 @@ body {
 	-webkit-font-smoothing: antialiased;
 	cursor: pointer;
 	display: block;
-	border-left: 3px solid #333;
+	border-left: 3px solid #fff;
 	transition: .5s;
 	padding: 15px;
+	margin-bottom: 5px;
 }
 .sidebar li a:hover {
 	color: rgba(255,255,255,1);
-	background: rgba(255,255,255,.2);
-	border-left: 3px solid #777;
+	background: rgba(255,255,255,.5);
+	border-left: 10px solid #fff;
 
 }
 
@@ -66,6 +66,7 @@ body {
 /* Page Styles */
 
 .container {
+	display: flex;
 	width: 80%;
 	margin: 0 auto;
 	color: #fff;
