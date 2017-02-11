@@ -30,21 +30,25 @@ body {
 	background: rgba(0,0,0, .9);
 	transition: .5s;
 }
-.sidebar li {
+.sidebar li a{
 	color: rgba(255,255,255,.8);
 	font-size: 16px;
 	-webkit-font-smoothing: antialiased;
 	cursor: pointer;
-	padding: 15px 30px;
+	display: block;
 	border-left: 3px solid #333;
 	transition: .5s;
-	margin-bottom: 5px;
+	padding: 15px;
 }
-.sidebar li:hover {
+.sidebar li a:hover {
 	color: rgba(255,255,255,1);
 	background: rgba(255,255,255,.2);
 	border-left: 3px solid #777;
 
+}
+
+.sidebar li a:visited {
+	color: rgba(255,255,255,.8);
 }
 #sidebarToggle {
 	display: none;
@@ -64,7 +68,7 @@ body {
 .container {
 	width: 80%;
 	margin: 0 auto;
-	color: red;
+	color: #fff;
 }
 .header {
 	display: flex;
@@ -76,7 +80,7 @@ body {
 	align-items: center;
 }
 section {
-	min-height: 400px;
+	min-height: 700px;
 	margin: 0px;
 	padding: 10px;
 }
