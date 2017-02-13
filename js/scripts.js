@@ -1,11 +1,6 @@
 console.log('Hello, Matt');
 
-
-$('#navOpener').on('click', function(){
-
-})
-
-
+/* close navUI on click & scroll to page section */
 $('a[href^="#"').on('click', function(event) {
 document.getElementById('sidebarToggle').checked = false;
 	var target = $(this.getAttribute('href'));
