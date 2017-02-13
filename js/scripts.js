@@ -13,3 +13,14 @@ document.getElementById('sidebarToggle').checked = false;
 	
 });
 
+$(document).ready(sizeContent);
+
+//Every resize of window
+$(window).resize(sizeContent);
+
+//Dynamically assign height
+function sizeContent() {
+var newHeight = $("html").height() + "px";
+$(".header").css("height", newHeight);
+$(".content").css("top", newHeight);
+}

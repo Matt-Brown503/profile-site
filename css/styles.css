@@ -24,7 +24,7 @@ body {
 	right: 0;
 	bottom: 0;
 	left: -200px;
-	z-index: 1;
+	z-index: 3;
 	width: 150px;
 	background: rgba(0,0,0, .9);
 	transition: .5s;
@@ -73,12 +73,22 @@ body {
 }
 .header {
 	display: flex;
-	background-image: url('../img/portland-blur.jpg');
+	background-image: url('http://static5.gamespot.com/uploads/original/1197/11970954/2435993-kh3_02.jpg');
 	background-size: cover;
 	height: 100vh;
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
+	position: fixed;
+	width: 100%;
+	z-index: 1;
+	margin: 0;
+}
+
+.content {
+	z-index: 2;
+	position: relative;
+	height: 100vh;
 }
 section {
 	min-height: 700px;
