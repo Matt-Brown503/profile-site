@@ -64,6 +64,7 @@ body {
 	opacity: 1;
 }
 
+
 #sidebarToggle:checked + .page-wrap .sidebar {
  left: 0px;
 }
@@ -79,11 +80,17 @@ body {
 }
 /* Page Styles */
 
+.tool-img {
+	fill: #fff;
+
+}
+
 .container {
 	display: flex;
-	width: 80%;
+	width: 90%;
 	margin: 0 auto;
 	color: #fff;
+	flex-direction: column;
 }
 .header {
 	display: flex;
@@ -116,6 +123,7 @@ h1 p {
 	z-index: 2;
 	position: relative;
 	height: 100vh;
+	box-shadow: -5px 10px 5px;
 }
 section {
 	min-height: 700px;
@@ -124,10 +132,69 @@ section {
 }
 
 .about {
-	background-color: green;
+	background-color: #222;
+
 }
-.work {
-	background-color: red;
+
+.about-img img{
+	width: 100%;
+	border-radius: 4px;
+}
+
+.tool-img {
+	width: 70px;
+	height: 70px;
+}
+
+.tools {
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: row;
+	justify-content: space-around;
+}
+
+.projects {
+	background-color: #444;
+}
+.projects-img {
+	width: 100%;
+}
+.projects-content {
+text-align: justify;
+border-bottom: 1px solid #fff;
+}
+.projects ul {
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+}
+.projects ul li {
+	display: inline-block;
+	background-color: #222;
+	padding: 10px 20px;
+	border-radius: 5px;
+	margin-top: 5px;
+}
+.buttons {
+	display: flex;
+  	justify-content: space-between;
+}
+.projects button {
+    background-color: #222;
+    border: none;
+    color: white;
+    padding: 16px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    transition-duration: 0.4s;
+    cursor: pointer;  
+    width: 45%;
+    border-radius: 5px;
+}
+.projects button:hover {
+	background-color: #333;
 }
 .contact {
 	background-color: blue;
@@ -137,3 +204,5 @@ footer {
 	 min-height: 100px;
 	background: #444;
 }
+
+@media 
