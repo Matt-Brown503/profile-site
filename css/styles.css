@@ -80,6 +80,11 @@ body {
 }
 /* Page Styles */
 
+p {
+	line-height: 1.5;
+	-webkit-font-smoothing: antialiased;
+}
+
 .tool-img {
 	fill: #fff;
 
@@ -126,7 +131,6 @@ h1 p {
 	box-shadow: -5px 10px 5px;
 }
 section {
-	min-height: 700px;
 	margin: 0px;
 	padding: 10px;
 }
@@ -197,8 +201,54 @@ border-bottom: 1px solid #fff;
 	background-color: #333;
 }
 .contact {
-	background-color: blue;
+	background-color: #333;
+
 }
+#contact {
+	font-size: 12px;
+}
+
+#contact button {
+	background-color: #222;
+    border: none;
+    color: white;
+    padding: 16px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: block;
+    font-size: 16px;
+    transition-duration: 0.4s;
+    cursor: pointer;  
+    width: 45%;
+    border-radius: 5px;
+    margin: 0 auto;
+}
+
+fieldset {
+	border: none;
+	margin: 5px 0px;
+	padding: 0px;
+}
+
+fieldset input, textarea {
+	resize: none;
+	padding: 10px;
+	max-width: 100%;
+	width: 100%;
+	background-color: #222;
+	outline: 0;
+	border: 1px solid #555;
+	color: #fff;
+}
+fieldset input:focus, textarea:focus {
+	outline: 0;
+	border: 1px solid #999;
+}
+
+textarea {
+	height: 100px;
+}
+
 
 footer {
 	 min-height: 100px;
