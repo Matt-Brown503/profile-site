@@ -93,9 +93,10 @@ p {
 .container {
 	display: flex;
 	width: 90%;
-	margin: 0 auto;
+	margin: 25px auto;
 	color: #fff;
 	flex-direction: column;
+
 }
 .header {
 	display: flex;
@@ -116,6 +117,10 @@ p {
 	margin-bottom: 5px;
 	text-align: center;
 }
+h1 {
+	text-align: center;
+}
+
 h1 .thin {
 	font-weight: 400;
 }
@@ -124,6 +129,10 @@ h1 p {
 	font-size: .5em;
 	text-transform: none;
 }
+h2 {
+	margin-bottom: 5px;
+}
+
 .content {
 	z-index: 2;
 	position: relative;
@@ -140,9 +149,14 @@ section {
 
 }
 
+.about p {
+	margin-top: 0px;
+}
+
 .about-img img{
 	width: 100%;
-	border-radius: 4px;
+	border-radius: 3px;
+	border: solid 1px #555;
 }
 
 .tool-img {
@@ -158,14 +172,15 @@ section {
 }
 
 .projects {
-	background-color: #444;
+	background-color: #333;
 }
 .projects-img {
 	width: 100%;
+	border: 1px solid #555;
 }
 .projects-content {
 text-align: justify;
-border-bottom: 1px solid #fff;
+
 }
 .projects ul {
 	display: flex;
@@ -176,8 +191,12 @@ border-bottom: 1px solid #fff;
 	display: inline-block;
 	background-color: #222;
 	padding: 10px 20px;
-	border-radius: 5px;
+	border-radius: 3px;
 	margin-top: 5px;
+}
+.projects h3 {
+	border-bottom: 1px solid #fff;
+	padding-bottom: 3px;
 }
 .buttons {
 	display: flex;
@@ -195,13 +214,15 @@ border-bottom: 1px solid #fff;
     transition-duration: 0.4s;
     cursor: pointer;  
     width: 45%;
-    border-radius: 5px;
+    border: solid 1px #555;
+    border-radius: 3px;
 }
 .projects button:hover {
-	background-color: #333;
+	background-color: #444;
+	border-left: solid 5px #fff;
 }
 .contact {
-	background-color: #333;
+	background-color: #222;
 
 }
 #contact {
@@ -209,7 +230,7 @@ border-bottom: 1px solid #fff;
 }
 
 #contact button {
-	background-color: #222;
+	background-color: #333;
     border: none;
     color: white;
     padding: 16px 32px;
@@ -235,7 +256,7 @@ fieldset input, textarea {
 	padding: 10px;
 	max-width: 100%;
 	width: 100%;
-	background-color: #222;
+	background-color: #333;
 	outline: 0;
 	border: 1px solid #555;
 	color: #fff;
@@ -255,4 +276,38 @@ footer {
 	background: #444;
 }
 
-@media 
+@media only screen and (min-width: 768px) {
+	.container {
+		width: 70%;
+	}
+	.contact-form{
+		width: 50%;
+		align-self: center;
+	}
+	.about-img {
+		margin: 0 auto;
+		max-width: 50%;
+	}
+
+} 
+@media only screen and (min-width: 1024px) {
+	.about-content {
+		display: inline-block;
+		width: 65%;
+		padding-left: 10px;
+	}
+	.about-img {
+		align-self: flex-start;
+		margin: 0;
+	}
+	.test {
+		display: flex;
+		justify-content: space-between;
+	}
+	.projects-content {
+		margin-left: 10px;
+	}
+	.projects-img {
+		display: inline-flex;
+	}
+}
